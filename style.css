@@ -20,6 +20,7 @@ SHA-1 :
 11. About
 */
 @import url("http://fonts.googleapis.com/css?family=Lato%7CGreat+Vibes%7CRoboto%7COld+Standard+TT%7CSource+Sans+Pro:300&amp;subset=latin,latin,latin,latin,latin");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6313,7 +6314,7 @@ blockquote {
     .banner-v1 .banner-caption-v1 h1 {
       font-size: 100px;
       color: #fff;
-      /* font-family: "Great Vibes", cursive; */
+      font-family: "Great Vibes", cursive;
       text-align: center; }
       .banner-v1 .banner-caption-v1 h1 img {
         display: block;
@@ -6670,7 +6671,9 @@ blockquote {
       color: #747474; }
       .widget-2 .contact-details a:hover {
         color: #fff; }
-
+.quick li{
+  border-top:0!important;
+}
 .widget-newsletter .form-group {
   position: relative;
   padding-right: 75px; }

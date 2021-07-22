@@ -129,14 +129,17 @@ jQuery(window).on('resize', function() {
 	  itemSelector: '.product-grid'
 	});
 	// filter items when filter link is clicked
-	jQuery('.product-list-filter a').on('click', function(){
+		jQuery('.product-list-filter a').on('click', function(){
 		jQuery('.product-list-filter a').removeClass('active');
 		jQuery(this).addClass('active');
 	  var selector = jQuery(this).attr('data-filter');
 	  $container.isotope({ filter: selector });
 	  return false;
+	  
 	});
 	// product image lightbox
+	
+
 	$('.mfp-image').magnificPopup({
 		type:"image",
 		removalDelay: 500,
