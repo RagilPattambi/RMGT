@@ -126,14 +126,16 @@ jQuery(window).on('resize', function() {
 	var $container = jQuery('.product-list');
 	// initialize isotope
 	$container.isotope({
-	  itemSelector: '.product-grid'
+		filter: ':nth-child(-n+3)'
 	});
 	// filter items when filter link is clicked
 		jQuery('.product-list-filter a').on('click', function(){
 		jQuery('.product-list-filter a').removeClass('active');
 		jQuery(this).addClass('active');
 	  var selector = jQuery(this).attr('data-filter');
-	  $container.isotope({ filter: selector });
+	  $container.isotope({ filter: function() {
+        return $(this).is(selector) && $(this).index(selector) < 3;
+    	} });
 	  return false;
 	  
 	});
