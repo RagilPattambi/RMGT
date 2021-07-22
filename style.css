@@ -6313,7 +6313,7 @@ blockquote {
     .banner-v1 .banner-caption-v1 h1 {
       font-size: 100px;
       color: #fff;
-      /* font-family: "Great Vibes", cursive; */
+      font-family: "Great Vibes", cursive;
       text-align: center; }
       .banner-v1 .banner-caption-v1 h1 img {
         display: block;
